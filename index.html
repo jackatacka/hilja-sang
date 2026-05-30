@@ -456,7 +456,17 @@
       opacity: 1;
       transform: translateY(0);
     }
+.product-image img,
+.hero-product img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
+.hero-product {
+  padding: 0;
+  overflow: hidden;
+}
     @media (max-width: 920px) {
       .hero-grid,
       .story-grid,
@@ -549,9 +559,8 @@
         <div class="hero-card reveal">
           <div class="drop-label">Ocean-ready essentials</div>
           <div class="hero-product">
-            Hilja Sang
-            <span>Replace this block with your best product image</span>
-          </div>
+  <img src="hero.jpg" alt="Hilja Sang surf apparel">
+</div>
         </div>
       </div>
     </section>
