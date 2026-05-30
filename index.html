@@ -662,7 +662,7 @@
           </div>
 
           <div>
-            <form id="waitlistForm">
+            <form id="waitlistForm" action="https://formspree.io/f/xqejjodj" method="POST">
               <input type="text" name="name" placeholder="Name" required />
               <input type="email" name="email" placeholder="Email" required />
               <select name="interest" required>
@@ -677,7 +677,7 @@
             </form>
 
             <div class="success" id="successMessage">You’re on the list. We’ll send early access when the first drop is ready.</div>
-            <p class="form-note">Important: this demo form shows a success message. Connect it to Formspree, Mailchimp, Klaviyo, or Google Sheets before collecting real emails.</p>
+            <p class="form-note">Join the waitlist for early updates, product previews, and first access to the Hilja Sang launch.</p>
           </div>
         </div>
       </div>
@@ -711,14 +711,7 @@
 
     document.getElementById('year').textContent = new Date().getFullYear();
 
-    const form = document.getElementById('waitlistForm');
-    const success = document.getElementById('successMessage');
-
-    form.addEventListener('submit', function(event) {
-      event.preventDefault();
-      success.style.display = 'block';
-      form.reset();
-    });
+    
   </script>
 </body>
 </html>
